@@ -55,7 +55,7 @@ public class MineGUI extends JFrame implements ActionListener{
 	private static Image face;
 		
 	public MineGUI() {
-		super("Minesweeper");
+		super("MayinTarlasi");
 		setSize(WIDTH, HEIGHT);
 		setResizable(false);
 		
@@ -98,7 +98,7 @@ public class MineGUI extends JFrame implements ActionListener{
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		JOptionPane.showMessageDialog(this, "Hoþgeldin", "Mesaj", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(this, "HoÃ¾geldin", "Mesaj", JOptionPane.PLAIN_MESSAGE);
 		}
 	public static int getBombNum() {
 		switch (size) {
@@ -358,7 +358,7 @@ public class MineGUI extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource().equals(newGame)) {
-			String[] buttons = {"Baþlangýç", "Orta Seviye", "Zor"};
+			String[] buttons = {"BaÃ¾langÃ½Ã§", "Orta Seviye", "Zor"};
 			int a = JOptionPane.showOptionDialog(this, "Zorluk:", "Yeni Oyun", JOptionPane.PLAIN_MESSAGE, JOptionPane.PLAIN_MESSAGE, null, buttons, buttons[1]);
 			clearGame();
 			if (a == 0)
