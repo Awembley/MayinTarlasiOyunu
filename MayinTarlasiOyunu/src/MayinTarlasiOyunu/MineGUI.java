@@ -89,7 +89,7 @@ public class MineGUI extends JFrame implements ActionListener{
 		resetTime();
 		panel = new JPanel();
 		
-		//start with beginner
+		
 		loadGame(9);
 		
 		getContentPane().add(toppane, BorderLayout.NORTH);
